@@ -5,8 +5,8 @@ import '@app/globals.css';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: 'Ben Leffler',
-  description: 'Senior Software Engineer',
+  title: 'View Some Source Code',
+  description: 'Nice Source Code, Bro',
 };
 
 export default function RootLayout({
@@ -17,6 +17,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
+        <h2>Source Code Layout</h2>
         {children}
       </body>
     </html>
