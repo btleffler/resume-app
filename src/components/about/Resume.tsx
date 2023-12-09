@@ -4,7 +4,11 @@ import Education from '@components/about/Education';
 import Experience from '@components/about/Experience';
 import Skills from '@components/about/Skills';
 
-export default function Resume({ resume }: { resume: ResumeData }) {
+export default function Resume({
+  resume,
+}: {
+  resume: ResumeData,
+}) {
   return (
     <section
       className="flex max-lg:flex-col shadow-2xl bg-gradient-to-b from-slate-400 via-70% via-slate-400 to-slate-500 to-90% divide-x divide-slate-600 max-lg:divide-x-0 max-lg:divide-y-2"

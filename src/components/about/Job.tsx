@@ -6,7 +6,11 @@ const formatDate = (date: Date) =>
     month: `long`,
   });
 
-export default function Job({ job }: {job: JobData }) {
+export default function Job({
+  job,
+}: {
+  job: JobData,
+}) {
   const formattedDates = job.end
     ? `${formatDate(job.start)} - ${formatDate(job.end)}`
     : `${formatDate(job.start)} - Present`;

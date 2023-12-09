@@ -7,16 +7,18 @@ export default function Experience({
 }: {
   jobs: Array<JobData>,
 }) {
+  const renderedJobs = jobs.map((job, idx) => (
+    <Job
+      key={idx}
+      job={job}
+    />
+  ));
+
   return (
     <ResumeSection
       title={`Experience`}
     >
-      {jobs.map((job, idx) => (
-        <Job
-          key={idx}
-          job={job}
-        />
-      ))}
+      {renderedJobs}
     </ResumeSection>
   );
 }
