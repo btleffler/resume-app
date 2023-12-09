@@ -1,14 +1,21 @@
-import { ContactData } from "./types";
+import { ContactData } from "@components/about/types";
+import ResumeSection from "@components/about/ResumeSection";
 
-function Contact ({ contact }: { contact: ContactData }) {
+export default function Contact ({
+  contact,
+}: {
+  contact: ContactData,
+}) {
   return (
-    <div className="relative overflow-hidden">
-      <span className="absolute top-0 right-0 z-0 text-slate-800 text-6xl opacity-25 skew-x-6 -rotate-12">Contact</span>
-      <div className="flex max-md:flex-col relative z-10">
-        <h1 className="flex-auto font-serif text-5xl underline">
+    <ResumeSection
+      title={`Contact`}>
+      <div className="flex max-md:flex-col">
+        <h1
+          className="flex-auto font-serif text-5xl underline">
           {contact.name}
         </h1>
-        <div className="flex flex-col text-right mb-3">
+        <div
+          className="flex flex-col text-right mb-3">
           <a
             className="font-mono transition-all hover:text-cyan-300"
             href={`mailto:${contact.email}`}>
@@ -21,8 +28,6 @@ function Contact ({ contact }: { contact: ContactData }) {
           </a>
         </div>
       </div>
-    </div>
+    </ResumeSection>
   );
 }
-
-export default Contact;

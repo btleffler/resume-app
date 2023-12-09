@@ -1,5 +1,8 @@
-function Skill({ skill }: { skill: string }) {
-  return (<li>{skill}</li>);
+export default function Skill({ skill }: { skill: string }) {
+  return (
+    <li
+      className="text-sm">
+      {skill}
+    </li>
+  );
 }
-
-export default Skill;
