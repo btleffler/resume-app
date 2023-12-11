@@ -11,17 +11,21 @@ export default function Contact ({
       title={`Contact`}>
       <div className="flex max-md:flex-col">
         <h1
+          role="heading"
+          aria-level="1"
           className="flex-auto font-serif text-5xl underline">
           {contact.name}
         </h1>
         <div
           className="flex flex-col text-right mb-3">
           <a
+            role="link"
             className="font-mono transition-all hover:text-cyan-300"
             href={`mailto:${contact.email}`}>
             {contact.email}
           </a>
           <a
+            role="link"
             className="font-mono transition-all hover:text-cyan-300"
             href={`tel:${contact.phone}`}>
             {contact.phone}
