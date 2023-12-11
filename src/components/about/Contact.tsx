@@ -12,7 +12,6 @@ export default function Contact ({
       <div className="flex max-md:flex-col">
         <h1
           role="heading"
-          aria-level="1"
           className="flex-auto font-serif text-5xl underline">
           {contact.name}
         </h1>
