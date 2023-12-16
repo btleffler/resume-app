@@ -1,9 +1,10 @@
+import { ReactNode } from "react";
 import { JobData } from "./types";
 
-const formatDate = (date: Date) =>
+const formatDate = (date: Date): string =>
   date.toLocaleDateString('en-us', {
-    year: `numeric`,
-    month: `long`,
+    year: 'numeric',
+    month: 'long',
   });
 
 export default function Job({
@@ -11,11 +12,11 @@ export default function Job({
 }: {
   job: JobData,
 }) {
-  const formattedDates = job.end
+  const formattedDates: string = job.end
     ? `${formatDate(job.start)} - ${formatDate(job.end)}`
     : `${formatDate(job.start)} - Present`;
   
-  const duties = job.duties.map((duty, idx) => (
+  const duties: ReactNode[] = job.duties.map((duty, idx) => (
     <li
       key={idx}
       className="text-sm">
@@ -23,7 +24,7 @@ export default function Job({
     </li>
   ));
 
-  const contributions = job.contributions.map((contribution, idx) => (
+  const contributions: ReactNode[] = job.contributions.map((contribution, idx) => (
     <li
       key={idx}
       className="text-sm">

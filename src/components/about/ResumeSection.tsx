@@ -1,8 +1,10 @@
+import { ReactNode } from "react";
+
 export default function ResumeSection({
   children,
   title,
 }: {
-  children?: React.ReactNode,
+  children?: ReactNode,
   title: string,
 }) {
   return (
