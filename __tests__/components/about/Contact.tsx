@@ -1,6 +1,6 @@
 import { render, screen } from "@testing-library/react";
 import Contact from "@components/about/Contact";
-import { ContactData } from "@src/components/about/types";
+import { ContactData } from "@components/about/types";
 import '@testing-library/jest-dom';
 
 const mockContact: ContactData = {
