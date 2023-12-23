@@ -5,7 +5,7 @@ import { ReactNode } from "react";
 export default function Experience({
   skills,
 }: {
-  skills: Array<string>,
+  skills: string[],
 }) {
   const skillList: ReactNode[] = skills.map((skill, idx) => (
     <Skill
