@@ -11,7 +11,7 @@ export default function Resume({
 }) {
   return (
     <section
-      className="flex max-lg:flex-col shadow-2xl bg-gradient-to-b from-slate-400 via-70% via-slate-400 to-slate-500 to-90% divide-x divide-slate-600 max-lg:divide-x-0 max-lg:divide-y-2"
+      className="h-screen flex max-lg:flex-col shadow-2xl bg-gradient-to-b from-slate-400 via-70% via-slate-400 to-slate-500 to-90% divide-x divide-slate-600 max-lg:divide-x-0 max-lg:divide-y-2"
       role="document">
       <div
         className="flex-auto ml-2 mr-2 divide-y divide-slate-600">
