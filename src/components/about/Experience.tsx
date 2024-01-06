@@ -6,7 +6,7 @@ import { ReactNode } from "react";
 export default function Experience({
   jobs,
 }: {
-  jobs: Array<JobData>,
+  jobs: JobData[],
 }) {
   const renderedJobs: ReactNode[] = jobs.map((job, idx) => (
     <Job

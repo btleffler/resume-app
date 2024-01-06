@@ -10,8 +10,8 @@ export interface JobData {
   title: string,
   start: Date,
   end?: Date,
-  duties: Array<string>,
-  contributions: Array<string>,
+  duties: string[],
+  contributions: string[],
 }
 
 export interface EducationData {
@@ -22,7 +22,7 @@ export interface EducationData {
 
 export interface ResumeData {
   contact: ContactData,
-  jobs: Array<JobData>,
-  skills: Array<string>,
+  jobs: JobData[],
+  skills: string[],
   education: EducationData,
 }
