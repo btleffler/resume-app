@@ -4,7 +4,7 @@ import '@testing-library/jest-dom';
 import { lstat, readdir } from "fs/promises";
 import path from "path";
 
-const directories:Array<string> = [];
+const directories:string[] = [];
 const appPath = path.resolve('src', 'app');
 
 beforeAll(async () => {
