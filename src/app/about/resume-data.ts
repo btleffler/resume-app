@@ -12,6 +12,7 @@ const resume: ResumeData = {
       location: 'Remote',
       title: 'Senior Software Engineer',
       start: new Date('May 1, 2019'),
+      end: new Date('January 31, 2024'),
       duties: [
         'Leverage Node.js, Vue/Vuex, Python, PostgreSQL, Redis, and ElasticSearch to develop new features for existing and new CMS for multiple clients',
         'Perform code review to aid deployment of new features across organizations',
