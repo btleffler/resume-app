@@ -1,17 +1,17 @@
-import { BlogPost } from "@components/blog/types";
-
 export default function BlogNav ({
   posts,
 }: {
-  posts: BlogPost[],
+  posts: string[],
 }) {
-  const links = posts.map(({ date, title }, idx) => (
-    <li key={idx}>
+  const links = posts.map(async (path, idx) => {
+    const { date, title } = await path.toPost();
+
+    return (<li key={idx}>
       <a href={`${date}/${title}`}>
         {title}
       </a>
-    </li>
-  ));
+    </li>);
+  });
 
   return (
     <div role="navigation">

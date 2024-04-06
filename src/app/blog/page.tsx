@@ -1,4 +1,3 @@
-// import BlogNav from '@components/blog/BlogNav';
 import Post from '@components/blog/Post';
 import collectedPosts from './posts';
 
@@ -7,6 +6,6 @@ export default async function BlogHome() {
   const renderedPost = posts[0];
 
   return (
-    <span>Hullo from blog.</span>
+    <Post postPath={renderedPost} />
   );
 }
