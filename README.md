@@ -1,3 +1,8 @@
+# ‼️DEPRECATED‼️
+# Please visit [btleffler.github.io](https://github.com/btleffler/btleffler.github.io)
+
+---------------
+
 # Resume for Ben Leffler
 * Written in [Typescript](https://www.typescriptlang.org/)
 * Leverages [Next.js](https://nextjs.org/) and [React](https://react.dev/)
